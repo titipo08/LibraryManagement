@@ -139,7 +139,7 @@ A ready-to-deploy WAR file is included in `dist/library.war`.
 ant clean
 ant build
 ant deploy   # or copy dist/library.war to Tomcat manually
-
+```
 ## 🔗 Servlet URL Mappings
 
 | URL Pattern | Servlet Class | Purpose |
