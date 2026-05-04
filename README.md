@@ -173,7 +173,7 @@ A: Currently there is no recovery flow. A future improvement could add an admin 
 A: Yes — the current version does not enforce exclusive book availability. Adding a book availability check (i.e., checking that a `bk_code` is not already assigned to another user) would be a good enhancement.
 
 ## 🧑‍💻 Author
-kinjal sethiya — titipo08
+Kinjal Sethiya — titipo08
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE)
