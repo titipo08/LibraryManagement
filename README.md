@@ -155,21 +155,27 @@ ant deploy   # or copy dist/library.war to Tomcat manually
 ## ❓ Frequently Asked Questions (FAQ)
 
 **📌 Q1: Do I need NetBeans to run this project?**
+
 A: No. You can deploy the prebuilt `dist/library.war` directly to any Tomcat 10+ server without an IDE.
 
 **📌 Q2: Why does the project use `jakarta.*` instead of `javax.*`?**
+
 A: The project targets Jakarta EE 6.0, which migrated from the `javax.servlet` namespace to `jakarta.servlet`. Make sure you're using Tomcat 10 or later, as earlier versions use the old `javax.*` namespace and will throw `ClassNotFoundException` errors.
 
 **📌 Q3: How is the unique user code generated?**
+
 A: On registration, `loginservelet` generates a code by combining a random uppercase letter (A–Z) with a random 4-digit number (e.g., `K4821`). This code is stored in the database and shown to the user once — it's required for every future sign-in.
 
 **📌 Q4: How does the book return deadline work?**
+
 A: When a book is issued, `BookIssueServlet` automatically sets the issue date to today and the return date to 14 days from today using `java.time.LocalDate`.
 
 **📌 Q5: What happens if I lose my unique code?**
+
 A: Currently there is no recovery flow. A future improvement could add an admin panel or code-recovery via name lookup.
 
 **📌 Q6: Can multiple users borrow the same book simultaneously?**
+
 A: Yes — the current version does not enforce exclusive book availability. Adding a book availability check (i.e., checking that a `bk_code` is not already assigned to another user) would be a good enhancement.
 
 ## 🧑‍💻 Author
