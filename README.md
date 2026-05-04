@@ -80,7 +80,7 @@ library/
 └── librarypic.jpg
 ```
 
-## 🗄 Database Setup
+## 🗄 Database Dictionary
 
 Create the MySQL schema and tables before running the application.
 
@@ -109,10 +109,6 @@ CREATE TABLE book (
     bk_author VARCHAR(100)
 );
 
--- Add some books to get started
-INSERT INTO book VALUES ('B001', 'Clean Code', 'Robert C. Martin');
-INSERT INTO book VALUES ('B002', 'The Pragmatic Programmer', 'David Thomas');
-```
 
 > ⚠️ **Note:** The default DB credentials in the servlets are `root` / `kinjal`. Update these in each servlet file (or extract to a config file) before deploying to any shared or production environment.
 
