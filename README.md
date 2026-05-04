@@ -139,23 +139,6 @@ A ready-to-deploy WAR file is included in `dist/library.war`.
 ant clean
 ant build
 ant deploy   # or copy dist/library.war to Tomcat manually
-```
-
-## 🌐 Application Flow
-
-```
-index.jsp
-  ├── [Register] → loginservelet  → generates unique code → index.jsp (shows code)
-  └── [Sign In]  → signinservelet → validates name + code → section1.jsp (dashboard)
-
-section1.jsp (Dashboard)
-  ├── Reading       → readingservlet    → reading.jsp
-  ├── Book Issue    → BookIssueServlet  → bookissue.jsp
-  ├── Book Return   → BookReturnServlet → bookreturn.jsp
-  └── Display Info  → DisplayInfoServlet → displayinfo.jsp
-
-Any page → [Logout] → Logoutservlet → index.jsp
-```
 
 ## 🔗 Servlet URL Mappings
 
