@@ -197,4 +197,4 @@ A: Yes — the current version does not enforce exclusive book availability. Add
 kinjal sethiya — titipo08
 
 ## 📄 License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE)
