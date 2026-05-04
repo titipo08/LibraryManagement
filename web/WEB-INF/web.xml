@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <!-- SERVLETS -->
+    <servlet>
+        <servlet-name>registerservlet</servlet-name>
+        <servlet-class>registerservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginservelet</servlet-name>
+        <servlet-class>com.library.loginservelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>signinservelet</servlet-name>
+        <servlet-class>com.library.signinservelet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>readingservlet</servlet-name>
+        <servlet-class>com.library.readingservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookReturnServlet</servlet-name>
+        <servlet-class>com.library.BookReturnServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookIssueServlet</servlet-name>
+        <servlet-class>com.library.BookIssueServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayInfoServlet</servlet-name>
+        <servlet-class>com.library.DisplayInfoServlet</servlet-class>
+        <!-- ✅ FIXED -->
+    </servlet>
+    <!-- MAPPINGS -->
+    <servlet>
+        <servlet-name>Logoutservlet</servlet-name>
+        <servlet-class>com.library.Logoutservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerservlet</servlet-name>
+        <url-pattern>/registerservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginservelet</servlet-name>
+        <url-pattern>/loginservelet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signinservelet</servlet-name>
+        <url-pattern>/signinservelet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>readingservlet</servlet-name>
+        <url-pattern>/readingservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookReturnServlet</servlet-name>
+        <url-pattern>/BookReturnServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookIssueServlet</servlet-name>
+        <url-pattern>/BookIssueServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayInfoServlet</servlet-name>
+        <url-pattern>/DisplayInfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logoutservlet</servlet-name>
+        <url-pattern>/Logoutservlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
