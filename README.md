@@ -108,7 +108,7 @@ CREATE TABLE book (
     bk_name   VARCHAR(100),
     bk_author VARCHAR(100)
 );
-
+```
 
 > ⚠️ **Note:** The default DB credentials in the servlets are `root` / `kinjal`. Update these in each servlet file (or extract to a config file) before deploying to any shared or production environment.
 
